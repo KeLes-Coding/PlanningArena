@@ -1,0 +1,73 @@
+{
+    "userInfo": {
+        "current_date": "October 15, 2024",
+        "name": "Lin Zichun",
+        "age": 8,
+        "gender": "Female",
+        "height": 147,
+        "weight": 34,
+        "phone_number": "15921046789",
+        "current_physical_condition": "Stiff neck",
+        "living_address": "Room 1202, Unit 3, Building 10, Baiyun Road 528, Panlong District, Kunming",
+        "current_city": "Kunming",
+        "current_location": "Wuhua",
+        "favorite_food": "Cross-bridge Rice Noodles",
+        "favorite_restaurant": "Four Seasons Fresh",
+        "favorite_restaurant_seat": "Window-side two-person seat",
+        "booking_restaurant_request": "Quiet environment preferred",
+        "favorite_hotel": "InterContinental Hotel",
+        "favorite_hotel_room": "Business Suite",
+        "booking_hotel_request": "Evening service provided",
+        "favorite_taxi_type": "High-end sedan",
+        "favorite_flight_seat": "First class",
+        "favorite_train_seat": "VIP compartment seat",
+        "favorite_concert": "Zhang Yixing's Concert",
+        "favorite_sport_competition": "Tour of Qinghai Lake International Road Cycling Race",
+        "favorite_movie": "Tom Cruise's classic action films",
+        "favorite_shopping_platform": "JD.com",
+        "favorite_education_platform": "Zhihu Education",
+        "favorite_pay_method": "Alipay",
+        "current_studying_Course": "Data Analysis"
+    },
+    "travel_entertainment": {
+        "date_Span": "Next Saturday",
+        "target_date": "October 26, 2024",
+        "target_city": "Lijiang",
+        "first_specific_time": "9:00 AM",
+        "second_specific_time": "3:00 PM",
+        "third_specific_time": "9:00 PM",
+        "first_specific_location": "At the foot of Yulong Snow Mountain",
+        "second_specific_location": "Square in Sifang Street",
+        "third_specific_location": "Mu Mansion Night View",
+        "first_hour_span": "1 hour 15 minutes later",
+        "second_hour_span": "2 hours 25 minutes later",
+        "entertainment_activity": "Tom Cruise's new movie premiere",
+        "entertainment_activity_status": "Tickets are available, screening soon",
+        "save_to_memo": "Save this itinerary in my electronic memo"
+    },
+    "shopping": {
+        "first_product": "A pair of sports leggings",
+        "first_product_budget": "380 RMB",
+        "first_product_filter": "With air cushion design, suitable for yoga",
+        "second_product": "A high-end smart watch",
+        "second_product_budget": "3500 RMB",
+        "second_product_filter": "Battery replacement once a year",
+        "other_first_shopping_platform": "Xiaomi Youpin",
+        "other_second_shopping_platform": "Suning.com"
+    },
+    "education": {
+        "other_first_education_platform": "Geek Academy",
+        "first_course_level": "Beginner",
+        "second_course_level": "Intermediate",
+        "third_course_level": "Advanced",
+        "other_first_course": "Introduction to Machine Learning",
+        "other_second_course": "Deep Dive into Artificial Intelligence Application Cases"
+    },
+    "health": {
+        "recommend_food": "Please recommend some foods that are good for neck health",
+        "recommend_sport": "Please introduce some effective exercises to relieve neck pain",
+        "sport_product": "A professional neck stretching pillow",
+        "health_advice": "Please provide advice to help improve cervical discomfort symptoms and prevent them in daily life",
+        "food_calorie": "How many calories does this food contain?"
+    }
+}

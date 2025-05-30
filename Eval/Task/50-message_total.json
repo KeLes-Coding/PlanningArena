@@ -1,0 +1,162 @@
+[
+    {
+        "MessageNumber": "50",
+        "Query": "I need to find a hotel in Paris, check the weather forecast, and look up tourist attractions."
+    },
+    {
+        "GlobalThought": "Plan a trip to Paris by finding a suitable hotel, checking the weather forecast, and identifying tourist attractions.",
+        "OrderSteps": {
+            "TotalSteps": 3,
+            "StepDetail": {
+                "StepNumber": 1,
+                "Description": "Convert Paris location to latitude and longitude",
+                "Action": "BookingLocationToLatLong({'query': 'Paris'})",
+                "Results": {
+                    "status": true,
+                    "message": "Success",
+                    "timestamp": 1698765432,
+                    "data": [
+                        {
+                            "business_status": "OPERATIONAL",
+                            "formatted_address": "Paris, France",
+                            "geometry": {
+                                "location": {
+                                    "lat": "48.8566",
+                                    "lng": "2.3522"
+                                }
+                            },
+                            "name": "Paris",
+                            "opening_hours": {
+                                "open_now": true
+                            },
+                            "photos": [
+                                {
+                                    "height": 400,
+                                    "html_attributions": [
+                                        "Attribution text"
+                                    ],
+                                    "photo_reference": "photo_reference_string",
+                                    "width": 600
+                                }
+                            ],
+                            "place_id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+                            "plus_code": {
+                                "compound_code": "V75V+Q6 Paris, France",
+                                "global_code": "8FW4V75V+Q6"
+                            },
+                            "rating": 4.7,
+                            "reference": "reference_string",
+                            "types": [
+                                "locality",
+                                "political"
+                            ],
+                            "user_ratings_total": 1000
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "GlobalThought": "Plan a trip to Paris by finding a suitable hotel, checking the weather forecast, and identifying tourist attractions.",
+        "OrderSteps": {
+            "TotalSteps": 3,
+            "StepDetail": {
+                "StepNumber": 2,
+                "Description": "Search for hotels in Paris",
+                "Action": "BookingCOM({'latitude': '48.8566', 'longitude': '2.3522', 'arrival_date': '2023-11-01', 'departure_date': '2023-11-05'})",
+                "Results": {
+                    "status": true,
+                    "message": "Success",
+                    "timestamp": 1698765433,
+                    "data": {
+                        "count": 150,
+                        "result": [
+                            {
+                                "city": "Paris",
+                                "hotel_name_trans": "Hotel Paris Centre",
+                                "countrycode": "FR",
+                                "review_score": 8.5,
+                                "composite_price_breakdown": {
+                                    "gross_amount_per_night": {
+                                        "currency": "EUR",
+                                        "value": 150
+                                    }
+                                },
+                                "main_photo_url": "https://example.com/hotel_paris_centre.jpg"
+                            },
+                            {
+                                "city": "Paris",
+                                "hotel_name_trans": "Eiffel Tower Hotel",
+                                "countrycode": "FR",
+                                "review_score": 9.0,
+                                "composite_price_breakdown": {
+                                    "gross_amount_per_night": {
+                                        "currency": "EUR",
+                                        "value": 200
+                                    }
+                                },
+                                "main_photo_url": "https://example.com/eiffel_tower_hotel.jpg"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "GlobalThought": "Plan a trip to Paris by finding a suitable hotel, checking the weather forecast, and identifying tourist attractions.",
+        "OrderSteps": {
+            "TotalSteps": 3,
+            "StepDetail": {
+                "StepNumber": 3,
+                "Description": "Check the weather forecast for Paris",
+                "Action": "OpenWeather({'city': 'Paris'})",
+                "Results": {
+                    "coord": {
+                        "lon": 2.3522,
+                        "lat": 48.8566
+                    },
+                    "weather": [
+                        {
+                            "id": 800,
+                            "main": "Clear",
+                            "description": "clear sky",
+                            "icon": "01d"
+                        }
+                    ],
+                    "base": "stations",
+                    "main": {
+                        "temp": 15.0,
+                        "feels_like": 14.5,
+                        "temp_min": 13.0,
+                        "temp_max": 17.0,
+                        "pressure": 1015,
+                        "humidity": 60
+                    },
+                    "visibility": 10000,
+                    "wind": {
+                        "speed": 3.6,
+                        "deg": 180,
+                        "gust": 5.0
+                    },
+                    "clouds": {
+                        "all": 0
+                    },
+                    "dt": 1698765434,
+                    "sys": {
+                        "type": 1,
+                        "id": 6540,
+                        "country": "FR",
+                        "sunrise": 1698735432,
+                        "sunset": 1698775432
+                    },
+                    "timezone": 7200,
+                    "id": 2988507,
+                    "name": "Paris",
+                    "cod": 200
+                }
+            }
+        }
+    }
+]

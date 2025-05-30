@@ -1,0 +1,10 @@
+{
+    "TaskSuccessAgent": false,
+    "DependencyCheckAgent": true,
+    "RedundantStepsAgent": false,
+    "MissingStepsAgent": true,
+    "FictitiousMisusedParametersAgent": false,
+    "FictitiousToolAgent": false,
+    "OperationalSpaceErrorAgent": false,
+    "TimeReasoningErrorAgent": false
+}

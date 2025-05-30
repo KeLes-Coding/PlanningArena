@@ -1,0 +1,1649 @@
+{
+  "app_tools": {
+    "Shopping Scenarios": [
+      "Ele.me",
+      "Dianping",
+      "Marriott Mobile App",
+      "Mobike App",
+      "Amazon",
+      "eBay",
+      "Walmart Online Store",
+      "Target.com",
+      "Etsy",
+      "Maoyan",
+      "Taobao",
+      "JD.com",
+      "AliExpress",
+      "Sephora",
+      "ASOS",
+      "Zalando"
+    ],
+    "Education Scenarios": [
+      "Khan Academy",
+      "Coursera",
+      "Duolingo",
+      "edX",
+      "Codecademy",
+      "Udacity",
+      "Skillshare",
+      "Udemy",
+      "LinkedIn Learning",
+      "Babbel",
+      "Photomath",
+      "Quizlet",
+      "Canva"
+    ],
+    "Health Scenarios": [
+      "MyFitnessPal",
+      "Headspace",
+      "Fitbit",
+      "Calm",
+      "Strava",
+      "MyPlate by Livestrong",
+      "Nike Training Club",
+      "WebMD",
+      "Healthline",
+      "WaterMinder",
+      "Mindbody",
+      "Teladoc",
+      "PillPack",
+      "Sleep Cycle",
+      "7 Minute Workout",
+      "Symptomate",
+      "BetterHelp",
+      "Quit Genius"
+    ],
+    "Travel Scenarios": [
+      "Ctrip",
+      "Booking.com",
+      "Hertz Mobile App",
+      "Trenitalia Website",
+      "Uber",
+      "Airbnb",
+      "Google Maps",
+      "Skyscanner",
+      "TripAdvisor",
+      "Grab",
+      "BlaBlaCar",
+      "Gojek",
+      "KakaoTaxi",
+      "Citymapper",
+      "Agoda",
+      "Expedia"
+    ],
+    "Development Scenarios": [
+      "GitLab",
+      "JIRA",
+      "Jenkins",
+      "GitHub",
+      "Docker",
+      "Bitbucket",
+      "Travis CI",
+      "Trello",
+      "Asana",
+      "Confluence",
+      "Slack",
+      "Kubernetes",
+      "Readme.md",
+      "CircleCI",
+      "Zendesk",
+      "SourceTree"
+    ],
+    "Entertainment Scenarios": [
+      "Netflix",
+      "Spotify",
+      "Goodreads",
+      "YouTube Premium",
+      "Pandora",
+      "Crunchyroll",
+      "Twitch",
+      "Mixer",
+      "Stitcher",
+      "Photomath",
+      "Discord",
+      "Steam",
+      "Xbox Live",
+      "PlayStation Network",
+      "Oculus App",
+      "GOG Galaxy"
+    ],
+    "Meeting Scenarios": [
+      "Zoom",
+      "Microsoft Teams",
+      "Cisco Webex",
+      "BlueJeans",
+      "GoToMeeting",
+      "AnyMeeting",
+      "RingCentral",
+      "Livestorm",
+      "ClickMeeting",
+      "Cisco Spark"
+    ],
+    "Calendar Scenarios": [
+      "Google Calendar",
+      "Outlook",
+      "Apple Calendar",
+      "Calendly",
+      "Timely",
+      "TimeTree",
+      "MyStudyLife",
+      "Timetable"
+    ],
+    "Gaming Scenarios": [
+      "Nintendo eShop Card",
+      "Xbox Live",
+      "PlayStation Network",
+      "Oculus App",
+      "GOG Galaxy",
+      "Mixer"
+    ],
+    "Dining Scenarios": [
+      "UberEats",
+      "DoorDash",
+      "Postmates",
+      "Deliveroo",
+      "Caviar",
+      "Seamless",
+      "EatStreet",
+      "OrderUp",
+      "GrubDirect",
+      "Deliveroo App"
+    ],
+    "Other Scenarios": [
+      "PayPal",
+      "Apple Pay",
+      "Google Pay",
+      "Microsoft Rewards",
+      "SF Express",
+      "UPS",
+      "Royal Mail",
+      "FedEx",
+      "Didi Chuxing",
+      "12306",
+      "GrabFood",
+      "BlaBlaCar",
+      "KakaoTaxi",
+      "Citymapper",
+      "Alipay",
+      "WeChat Pay",
+      "IFTTT",
+      "Siri",
+      "WhatsApp",
+      "Telegram",
+      "Line",
+      "Skype",
+      "Viber",
+      "Facebook Messenger",
+      "Zalo",
+      "Todoist",
+      "Google Keep",
+      "Google Docs"
+    ]
+  },
+  "dag_tools": {
+    "queryWeather": {
+      "requiredParams": {
+        "date": {
+          "type": "str"
+        },
+        "city": {
+          "type": "str"
+        }
+      }
+    },
+    "getCitySpecialties": {
+      "requiredParams": {
+        "city": {
+          "type": "str"
+        }
+      },
+      "optionalParams": {
+        "foodType": {
+          "type": "str"
+        }
+      }
+    },
+    "bookRestaurant": {
+      "requiredParams": {
+        "reservationDate": {
+          "type": "datetime"
+        },
+        "reservationTime": {
+          "type": "datetime"
+        },
+        "restaurantLocation": {
+          "type": "str"
+        },
+        "city": {
+          "type": "str"
+        },
+        "userContactNumber": {
+          "type": "str"
+        },
+        "peopleNumber": {
+          "type": "int"
+        }
+      },
+      "optionalParams": {
+        "restaurantName": {
+          "type": "str"
+        },
+        "restaurantType": {
+          "type": "str"
+        },
+        "providingFood": {
+          "type": "str"
+        },
+        "specialRequests": {
+          "type": "str"
+        }
+      }
+    },
+    "bookHotel": {
+      "requiredParams": {
+        "hotelName": {
+          "type": "str"
+        },
+        "checkInDate": {
+          "type": "datetime"
+        },
+        "checkInTime": {
+          "type": "datetime"
+        },
+        "checkOutDate": {
+          "type": "datetime"
+        },
+        "roomType": {
+          "type": "str"
+        },
+        "numberOfRooms": {
+          "type": "str"
+        },
+        "peopleNumber": {
+          "type": "int"
+        },
+        "userContactNumber": {
+          "type": "str"
+        }
+      },
+      "optionalParams": {
+        "specialRequests": {
+          "type": "str"
+        }
+      }
+    },
+    "queryFlights": {
+      "requiredParams": {
+        "departureDate ": {
+          "type": "datetime"
+        },
+        "origin": {
+          "type": "str"
+        },
+        "destination": {
+          "type": "str"
+        }
+      },
+      "optionalParams": {
+        "departureTime": {
+          "type": "datetime"
+        },
+        "airline": {
+          "type": "str"
+        },
+        "cabinClass": {
+          "type": "str"
+        }
+      }
+    },
+    "bookFlight": {
+      "requiredParams": {
+        "flightNumber": {
+          "type": "str"
+        },
+        "contactNumber": {
+          "type": "str"
+        },
+        "cabinClass": {
+          "type": "str"
+        }
+      }
+    },
+    "queryTrains": {
+      "requiredParams": {
+        "date": {
+          "type": "datetime"
+        },
+        "origin": {
+          "type": "str"
+        },
+        "destination": {
+          "type": "str"
+        }
+      },
+      "optionalParams": {
+        "departureTime": {
+          "type": "datetime"
+        },
+        "trainType": {
+          "type": "str"
+        },
+        "cabinClass": {
+          "type": "str"
+        }
+      }
+    },
+    "bookTrain": {
+      "requiredParams": {
+        "trainNumber": {
+          "type": "str"
+        },
+        "contactNumber": {
+          "type": "str"
+        },
+        "cabinClass": {
+          "type": "str"
+        }
+      }
+    },
+    "bookTaxi": {
+      "requiredParams": {
+        "pickupAddress": {
+          "type": "str"
+        },
+        "dropOffAddress": {
+          "type": "str"
+        },
+        "pickupTime": {
+          "type": "datetime"
+        },
+        "contactNumber": {
+          "type": "str"
+        }
+      },
+      "optionalParams": {
+        "carType": {
+          "type": "str"
+        }
+      }
+    },
+    "searchGoodsOnline": {
+      "optionalParams": {
+        "goodName": {
+          "type": "str"
+        },
+        "goodCategory": {
+          "type": "str"
+        },
+        "minPrice": {
+          "type": "float"
+        },
+        "maxPrice": {
+          "type": "float"
+        },
+        "platform": {
+          "type": "str"
+        },
+        "sameDayDelivery": {
+          "type": "bool"
+        },
+        "brand": {
+          "type": "str"
+        },
+        "rating": {
+          "type": "float"
+        },
+        "freeShipping": {
+          "type": "bool"
+        }
+      }
+    },
+    "compareCostEffectiveness": {
+      "requiredParams": {
+        "product1Name": {
+          "type": "str"
+        },
+        "product2Name": {
+          "type": "str"
+        },
+        "product1Price": {
+          "type": "float"
+        },
+        "product2Price": {
+          "type": "float"
+        },
+        "product1Rating": {
+          "type": "float"
+        },
+        "product2Rating": {
+          "type": "float"
+        }
+      },
+      "optionalParams": {
+        "product3Name": {
+          "type": "str"
+        },
+        "product3Price": {
+          "type": "float"
+        },
+        "product3Rating": {
+          "type": "float"
+        }
+      }
+    },
+    "addToCart": {
+      "requiredParams": {
+        "goodId": {
+          "type": "str"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "goodName": {
+          "type": "str"
+        },
+        "goodSinglePrice": {
+          "type": "float"
+        },
+        "userContactNumber": {
+          "type": "float"
+        }
+      }
+    },
+    "buyGood": {
+      "requiredParams": {
+        "goodId": {
+          "type": "str"
+        },
+        "quantity": {
+          "type": "int"
+        },
+        "pricePerUnit": {
+          "type": "float"
+        },
+        "shippingCost": {
+          "type": "float"
+        },
+        "totalPrice": {
+          "type": "float"
+        },
+        "contactNumber": {
+          "type": "str"
+        },
+        "address": {
+          "type": "str"
+        }
+      },
+      "optionalParams": {
+        "promoCode": {
+          "type": "str"
+        },
+        "paymentMethod": {
+          "type": "str"
+        }
+      }
+    },
+    "queryOnlineCourses": {
+      "optionalParams": {
+        "category": {
+          "type": "str"
+        },
+        "courseName": {
+          "type": "str"
+        },
+        "pay": {
+          "type": "bool"
+        },
+        "coursePrice": {
+          "type": "float"
+        },
+        "platform": {
+          "type": "str"
+        },
+        "level": {
+          "type": "str"
+        },
+        "instructorName": {
+          "type": "str"
+        },
+        "rating": {
+          "type": "float"
+        },
+        "startDate": {
+          "type": "datetime"
+        }
+      }
+    },
+    "enrollCourse": {
+      "requiredParams": {
+        "courseId": {
+          "type": "str"
+        },
+        "courseName": {
+          "type": "str"
+        },
+        "userContactNumber": {
+          "type": "str"
+        }
+      }
+    },
+    "getEnrollCourses": {
+      "optionalParams": {
+        "contactNumber": {
+          "type": "str"
+        }
+      }
+    },
+    "searchEvents": {
+      "requiredParams": {
+        "eventType": {
+          "type": "str"
+        },
+        "location": {
+          "type": "str"
+        },
+        "date": {
+          "type": "date"
+        }
+      },
+      "optionalParams": {
+        "eventStatus": {
+          "type": "str"
+        },
+        "keyword": {
+          "type": "str"
+        }
+      }
+    },
+    "bookEvent": {
+      "requiredParams": {
+        "eventId": {
+          "type": "str"
+        },
+        "date": {
+          "type": "date"
+        },
+        "time": {
+          "type": "date"
+        },
+        "userContactNumber": {
+          "type": "date"
+        },
+        "peopleNumber": {
+          "type": "date"
+        }
+      }
+    },
+    "calculateBMI": {
+      "requiredParams": {
+        "height": {
+          "type": "float"
+        },
+        "weight": {
+          "type": "float"
+        }
+      }
+    },
+    "saveToMemo": {
+      "requiredParams": {
+        "startDate": {
+          "type": "datetime"
+        },
+        "endDate": {
+          "type": "datetime"
+        }
+      },
+      "optionalParams": {
+        "dateAndWeather": {
+          "type": "str"
+        },
+        "cityAndSpecialties": {
+          "type": "str"
+        },
+        "dateAndAction": {
+          "type": "str"
+        },
+        "hotelName": {
+          "type": "str"
+        },
+        "hotelPrice": {
+          "type": "float"
+        },
+        "restaurantName": {
+          "type": "str"
+        },
+        "trainPrice": {
+          "type": "float"
+        },
+        "flightNumber": {
+          "type": "str"
+        },
+        "flightPrice": {
+          "type": "float"
+        },
+        "taxiPrice": {
+          "type": "float"
+        },
+        "totalPrice": {
+          "type": "float"
+        },
+        "BMI": {
+          "type": "str"
+        },
+        "eventName": {
+          "type": "str"
+        },
+        "eventPrice": {
+          "type": "str"
+        }
+      }
+    },
+    "countBudget": {
+      "optionalParams": {
+        "price1": {
+          "type": "float"
+        },
+        "price2": {
+          "type": "float"
+        },
+        "price3": {
+          "type": "float"
+        },
+        "price4": {
+          "type": "float"
+        },
+        "price5": {
+          "type": "float"
+        },
+        "price6": {
+          "type": "float"
+        },
+        "price7": {
+          "type": "float"
+        },
+        "price8": {
+          "type": "float"
+        }
+      }
+    },
+    "recommendFood": {
+      "optionalParams": {
+        "age": {
+          "type": "int"
+        },
+        "gender": {
+          "type": "str"
+        },
+        "height": {
+          "type": "int"
+        },
+        "weight": {
+          "type": "int"
+        },
+        "BMI": {
+          "type": "float"
+        }
+      }
+    },
+    "recommendSports": {
+      "optionalParams": {
+        "age": {
+          "type": "int"
+        },
+        "gender": {
+          "type": "str"
+        },
+        "height": {
+          "type": "int"
+        },
+        "weight": {
+          "type": "int"
+        },
+        "BMI": {
+          "type": "float"
+        }
+      }
+    },
+    "calculateCalorie": {
+      "optionalParams": {
+        "foodName": {
+          "type": "str"
+        },
+        "foodType": {
+          "type": "str"
+        }
+      }
+    },
+    "healthAdvice": {
+      "optionalParams": {
+        "age": {
+          "type": "int"
+        },
+        "gender": {
+          "type": "str"
+        },
+        "height": {
+          "type": "int"
+        },
+        "weight": {
+          "type": "int"
+        },
+        "BMI": {
+          "type": "float"
+        },
+        "disease": {
+          "type": "str"
+        }
+      }
+    }
+  },
+  "travel_tools": {
+    "OpenWeather": {
+      "city": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "BookingCOM": {
+      "latitude": {
+        "type": "String",
+        "required": true
+      },
+      "longitude": {
+        "type": "String",
+        "required": true
+      },
+      "arrival_date": {
+        "type": "Date (yyyy-mm-dd)",
+        "required": true
+      },
+      "departure_date": {
+        "type": "Date (yyyy-mm-dd)",
+        "required": true
+      },
+      "radius": {
+        "type": "Number",
+        "required": false
+      },
+      "adults": {
+        "type": "Number",
+        "required": false
+      },
+      "children_age": {
+        "type": "String",
+        "required": false
+      },
+      "room_qty": {
+        "type": "Number",
+        "required": false
+      },
+      "price_min": {
+        "type": "Number",
+        "required": false
+      },
+      "price_max": {
+        "type": "Number",
+        "required": false
+      },
+      "units": {
+        "type": "Enum",
+        "required": false
+      },
+      "page_number": {
+        "type": "String",
+        "required": false
+      },
+      "temperature_unit": {
+        "type": "Enum",
+        "required": false
+      },
+      "languagecode": {
+        "type": "String",
+        "required": false
+      },
+      "currency_code": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "BookingLocationToLatLong": {
+      "query": {
+        "type": "String",
+        "required": true
+      }
+    },
+    "AeroDataBox": {
+      "flightTimeModel": {
+        "type": "Enum",
+        "required": false
+      },
+      "aircraftName": {
+        "type": "String",
+        "required": false
+      },
+      "codeType": {
+        "type": "Enum",
+        "required": false
+      },
+      "codeTo": {
+        "type": "String",
+        "required": false
+      },
+      "codeFrom": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "Tripadvisor": {
+      "location": {
+        "type": "String",
+        "required": true
+      },
+      "page": {
+        "type": "Number",
+        "required": false
+      }
+    },
+    "VacationsdetailsAPI": {
+      "country_name": {
+        "type": "String",
+        "required": true
+      }
+    },
+    "AmadeusAPI": {
+      "keyword": {
+        "type": "String",
+        "required": true
+      },
+      "subType": {
+        "type": "String",
+        "required": true
+      }
+    },
+    "FlightsScraperAPI": {
+      "market": {
+        "type": "String",
+        "required": false
+      },
+      "locale": {
+        "type": "String",
+        "required": false
+      },
+      "currency": {
+        "type": "String",
+        "required": false
+      },
+      "adults": {
+        "type": "Number",
+        "required": false
+      },
+      "children": {
+        "type": "Number",
+        "required": false
+      },
+      "infants": {
+        "type": "Number",
+        "required": false
+      },
+      "cabinClass": {
+        "type": "String",
+        "required": false
+      },
+      "stops": {
+        "type": "Array",
+        "required": false
+      },
+      "sort": {
+        "type": "String",
+        "required": false
+      },
+      "airlines": {
+        "type": "Array",
+        "required": false
+      },
+      "flights": {
+        "type": "Array",
+        "required": false
+      }
+    },
+    "GreatCircleMapper": {
+      "icao_iata": {
+        "type": "String",
+        "required": true
+      }
+    },
+    "TouristAttraction": {
+      "location": {
+        "type": "String",
+        "required": true
+      },
+      "language": {
+        "type": "String",
+        "required": true
+      },
+      "currency": {
+        "type": "String",
+        "required": true
+      },
+      "offset": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "VisaRequirements": {
+      "country": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "CostOfLivingPrices": {
+      "city": {
+        "type": "str",
+        "required": true
+      }
+    }
+  },
+  "entertainment_tools": {
+    "YouTubeDataAPI": {
+      "q": {
+        "type": "str",
+        "required": true
+      },
+      "hl": {
+        "type": "str",
+        "required": false
+      },
+      "gl": {
+        "type": "str",
+        "required": false
+      }
+    },
+    "YoutubeSearchAndDownload": {
+      "channelId": {
+        "type": "str",
+        "required": false
+      },
+      "lang": {
+        "type": "str",
+        "required": false
+      },
+      "type": {
+        "type": "str",
+        "required": false
+      },
+      "sortBy": {
+        "type": "str",
+        "required": false
+      },
+      "nextToken": {
+        "type": "str",
+        "required": false
+      }
+    },
+    "SpotifyDownloader": {
+      "search": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "IMDBAPI": {
+      "query": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "uNoGSAPI": {
+      "end_rating": {
+        "type": "String",
+        "required": false
+      },
+      "country_list": {
+        "type": "String",
+        "required": false
+      },
+      "start_year": {
+        "type": "Number",
+        "required": false
+      },
+      "person": {
+        "type": "String",
+        "required": false
+      },
+      "offset": {
+        "type": "Number",
+        "required": false
+      },
+      "order_by": {
+        "type": "String",
+        "required": false
+      },
+      "limit": {
+        "type": "Number",
+        "required": false
+      },
+      "end_year": {
+        "type": "Number",
+        "required": false
+      },
+      "top250": {
+        "type": "Number",
+        "required": false
+      },
+      "start_rating": {
+        "type": "String",
+        "required": false
+      },
+      "new_date": {
+        "type": "String",
+        "required": false
+      },
+      "top250tv": {
+        "type": "Number",
+        "required": false
+      },
+      "title": {
+        "type": "String",
+        "required": false
+      },
+      "expiring": {
+        "type": "String",
+        "required": false
+      },
+      "subtitle": {
+        "type": "String",
+        "required": false
+      },
+      "type": {
+        "type": "String",
+        "required": false
+      },
+      "genre_list": {
+        "type": "String",
+        "required": false
+      },
+      "audio": {
+        "type": "String",
+        "required": false
+      },
+      "audio_sub_andor": {
+        "type": "String",
+        "required": false
+      },
+      "country_andorunique": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "MyAnimeListAPI": {
+      "q": {
+        "type": "str",
+        "required": true
+      },
+      "n": {
+        "type": "Number",
+        "required": false
+      },
+      "score": {
+        "type": "Number",
+        "required": false
+      },
+      "genre": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  "shopping_tools": {
+    "RealTimeAmazonData": {
+      "country": {
+        "type": "String",
+        "required": false
+      },
+      "offset": {
+        "type": "Number",
+        "required": false
+      },
+      "categories": {
+        "type": "String",
+        "required": false
+      },
+      "min_product_star_rating": {
+        "type": "Enum",
+        "required": false
+      },
+      "price_range": {
+        "type": "Enum",
+        "required": false
+      },
+      "discount_range": {
+        "type": "Enum",
+        "required": false
+      },
+      "brands": {
+        "type": "String",
+        "required": false
+      },
+      "prime_early_access": {
+        "type": "Boolean",
+        "required": false
+      },
+      "prime_exclusive": {
+        "type": "Boolean",
+        "required": false
+      },
+      "fields": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "RealTimeProductSearch": {
+      "q": {
+        "type": "str",
+        "required": true
+      },
+      "language": {
+        "type": "str",
+        "required": false
+      },
+      "page": {
+        "type": "Number",
+        "required": false
+      },
+      "limit": {
+        "type": "Number",
+        "required": false
+      },
+      "sort_by": {
+        "type": "Enum",
+        "required": false
+      },
+      "min_price": {
+        "type": "Number",
+        "required": false
+      },
+      "max_price": {
+        "type": "Number",
+        "required": false
+      },
+      "product_condition": {
+        "type": "Enum",
+        "required": false
+      },
+      "stores": {
+        "type": "String",
+        "required": false
+      },
+      "free_returns": {
+        "type": "Boolean",
+        "required": false
+      },
+      "free_shipping": {
+        "type": "Boolean",
+        "required": false
+      },
+      "on_sale": {
+        "type": "Boolean",
+        "required": false
+      }
+    },
+    "AliexpressDataHub": {
+      "q": {
+        "type": "str",
+        "required": false
+      },
+      "page": {
+        "type": "Number",
+        "required": false
+      },
+      "sort": {
+        "type": "Enum",
+        "required": false
+      },
+      "catld": {
+        "type": "str",
+        "required": false
+      },
+      "brandld": {
+        "type": "str",
+        "required": false
+      },
+      "oc": {
+        "type": "str",
+        "required": false
+      },
+      "attr": {
+        "type": "str",
+        "required": false
+      },
+      "startPrice": {
+        "type": "Number",
+        "required": false
+      },
+      "endPrice": {
+        "type": "Number",
+        "required": false
+      },
+      "locale": {
+        "type": "str",
+        "required": false
+      },
+      "region": {
+        "type": "str",
+        "required": false
+      },
+      "currency": {
+        "type": "str",
+        "required": false
+      }
+    },
+    "ShopeeEcommerceData": {
+      "site": {
+        "type": "Enum",
+        "required": false
+      },
+      "keyword": {
+        "type": "String",
+        "required": false
+      },
+      "by": {
+        "type": "Enum",
+        "required": false
+      },
+      "order": {
+        "type": "Enum",
+        "required": false
+      },
+      "page": {
+        "type": "Number",
+        "required": false
+      },
+      "pageSize": {
+        "type": "Number",
+        "required": false
+      },
+      "cat_ids": {
+        "type": "String",
+        "required": false
+      },
+      "price_start": {
+        "type": "String",
+        "required": false
+      },
+      "price_end": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "1688DataHub": {
+      "q": {
+        "type": "String",
+        "required": false
+      },
+      "catId": {
+        "type": "String",
+        "required": false
+      },
+      "page": {
+        "type": "Number",
+        "required": false
+      },
+      "pageSize": {
+        "type": "Number",
+        "required": false
+      },
+      "startPrice": {
+        "type": "Number",
+        "required": false
+      },
+      "endPrice": {
+        "type": "Number",
+        "required": false
+      },
+      "sort": {
+        "type": "Enum",
+        "required": false
+      },
+      "switches": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "TaobaoAdvanced": {
+      "query": {
+        "type": "String",
+        "required": true
+      }
+    },
+    "WalmartAPI": {
+      "query": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "TrackingPackage": {
+      "tracking_number": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "CheapTrackingStatus": {
+      "trackingCode": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "PurchasefromplatformAPI": {
+      "platformName": {
+        "type": "str",
+        "required": true
+      },
+      "productID": {
+        "type": "str",
+        "required": true
+      },
+      "address": {
+        "type": "str",
+        "required": true
+      },
+      "quantity": {
+        "type": "int",
+        "required": true
+      }
+    },
+    "eBayAverageSellingPrice": {
+      "keywords": {
+        "type": "str",
+        "required": true
+      },
+      "max_search_results": {
+        "type": "str",
+        "required": true
+      },
+      "excluded_keywords": {
+        "type": "str",
+        "required": false
+      },
+      "category_id": {
+        "type": "str",
+        "required": false
+      },
+      "remove_outliers": {
+        "type": "str",
+        "required": false
+      },
+      "site_id": {
+        "type": "str",
+        "required": false
+      },
+      "max_pages": {
+        "type": "str",
+        "required": false
+      },
+      "aspects": {
+        "type": "list",
+        "required": false
+      }
+    }
+  },
+  "education_tools": {
+    "GetBooksInfo": {
+      "Query": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "ArxivJSON": {
+      "authors": {
+        "type": "str",
+        "required": false
+      },
+      "keywords": {
+        "type": "str",
+        "required": false
+      },
+      "sort_by": {
+        "type": "str",
+        "required": false
+      },
+      "sort_order": {
+        "type": "str",
+        "required": false
+      },
+      "start": {
+        "type": "Number",
+        "required": false
+      },
+      "max_results": {
+        "type": "Number",
+        "required": false
+      }
+    },
+    "ArxivGPT": {
+      "paper_id": {
+        "type": "str",
+        "required": true
+      },
+      "max_pages": {
+        "type": "Number",
+        "required": false
+      }
+    },
+    "Photomath": {
+      "locale": {
+        "type": "str",
+        "required": false
+      },
+      "image": {
+        "type": "binary",
+        "required": false
+      }
+    },
+    "TEDTalksAPI": {
+      "id": {
+        "type": "Number",
+        "required": false
+      },
+      "from_record_date": {
+        "type": "Date",
+        "required": false
+      },
+      "to_record_date": {
+        "type": "Date",
+        "required": false
+      },
+      "record_date": {
+        "type": "Date",
+        "required": false
+      },
+      "from_publish_date": {
+        "type": "Date",
+        "required": false
+      },
+      "to_publish_date": {
+        "type": "Date",
+        "required": false
+      },
+      "publish_date": {
+        "type": "Date",
+        "required": false
+      },
+      "min_duration": {
+        "type": "Number",
+        "required": false
+      },
+      "max_duration": {
+        "type": "Number",
+        "required": false
+      },
+      "audio_lang": {
+        "type": "String",
+        "required": false
+      },
+      "subtitle_lang": {
+        "type": "String",
+        "required": false
+      },
+      "speaker": {
+        "type": "String",
+        "required": false
+      },
+      "topic": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "UniversityCollegeListRankings": {},
+    "UdemyPaidCoursesForFree": {
+      "page": {
+        "type": "str",
+        "required": true
+      },
+      "page_size": {
+        "type": "str",
+        "required": true
+      },
+      "query": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "PronunciationAssessment": {
+      "audio_base64": {
+        "type": "str",
+        "required": false
+      },
+      "audio_format": {
+        "type": "str",
+        "required": false
+      },
+      "text": {
+        "type": "str",
+        "required": false
+      }
+    },
+    "AdvanceCourseFinder": {
+      "course_id": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "RandomWordsWithPronunciation": {},
+    "BookInformationLibrary": {
+      "genre": {
+        "type": "str",
+        "required": false
+      }
+    }
+  },
+  "health_tools": {
+    "GoogleMapsGeocoding": {
+      "latlng": {
+        "type": "str",
+        "required": true
+      },
+      "location_type": {
+        "type": "str",
+        "required": false
+      },
+      "result_type": {
+        "type": "str",
+        "required": false
+      }
+    },
+    "ExerciseDB": {
+      "bodyPart": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "USDoctorsAPI": {
+      "NPI": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "AdvancedExerciseFinder": {},
+    "PositivityTips": {},
+    "AIWorkoutNutritionGuideAPI": {
+      "goal": {
+        "type": "str",
+        "required": false
+      },
+      "dietary_restrictions": {
+        "type": "array",
+        "required": false
+      },
+      "current_weight": {
+        "type": "Number",
+        "required": false
+      },
+      "target_weight": {
+        "type": "Number",
+        "required": false
+      },
+      "daily_activity_level": {
+        "type": "String",
+        "required": false
+      },
+      "lang": {
+        "type": "String",
+        "required": false
+      }
+    },
+    "BMICalculator": {
+      "height": {
+        "type": "str",
+        "required": true
+      },
+      "weight": {
+        "type": "str",
+        "required": true
+      }
+    },
+    "CoronavirusMonitor": {},
+    "NutritionCalculator": {
+      "measurement_units": {
+        "type": "str",
+        "required": true
+      },
+      "feet": {
+        "type": "str",
+        "required": false
+      },
+      "inches": {
+        "type": "str",
+        "required": false
+      },
+      "lbs": {
+        "type": "str",
+        "required": false
+      },
+      "cm": {
+        "type": "str",
+        "required": false
+      },
+      "kilos": {
+        "type": "str",
+        "required": false
+      }
+    },
+    "AnxietyDepression": {
+      "limit": {
+        "type": "String",
+        "required": false
+      },
+      "orderBy": {
+        "type": "String",
+        "required": false
+      },
+      "index": {
+        "type": "String",
+        "required": false
+      },
+      "value": {
+        "type": "String",
+        "required": false
+      }
+    }
+  }
+}
